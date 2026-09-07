@@ -142,3 +142,61 @@
     color: var(--color-foreground);
   }
 }
+
+/* ── RÊCHE editorial design system (90s Vogue tear-sheet) ───────────── */
+:root {
+  --radius: 0rem;
+  --background: oklch(0.977 0.006 90);
+  --foreground: oklch(0.15 0 0);
+  --card: oklch(0.977 0.006 90);
+  --card-foreground: oklch(0.15 0 0);
+  --popover: oklch(0.977 0.006 90);
+  --popover-foreground: oklch(0.15 0 0);
+  --primary: oklch(0.51 0.21 22);
+  --primary-foreground: oklch(0.977 0.006 90);
+  --secondary: oklch(0.95 0.008 90);
+  --secondary-foreground: oklch(0.15 0 0);
+  --muted: oklch(0.95 0.008 90);
+  --muted-foreground: oklch(0.61 0.008 85);
+  --accent: oklch(0.51 0.21 22);
+  --accent-foreground: oklch(0.977 0.006 90);
+  --border: oklch(0.86 0.014 85);
+  --input: oklch(0.86 0.014 85);
+  --ring: oklch(0.51 0.21 22);
+  --rule: oklch(0.86 0.014 85);
+  --grain: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.42'/%3E%3C/svg%3E");
+}
+
+@theme inline {
+  --font-display: "Bodoni Moda", "Times New Roman", serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --color-rule: var(--rule);
+}
+
+@utility grain {
+  position: relative;
+}
+@utility grain-overlay {
+  position: absolute;
+  inset: 0;
+  background-image: var(--grain);
+  background-size: 140px 140px;
+  mix-blend-mode: multiply;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    letter-spacing: -0.01em;
+  }
+}
+
+@utility kicker {
+  font-family: var(--font-sans);
+  font-size: 0.625rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
