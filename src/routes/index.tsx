@@ -57,7 +57,7 @@ const secondhand = [
 const nav = ["Wardrobe", "Looks", "Secondhand", "Board"];
 
 function Index() {
-  const [activeLook, setActiveLook] = useState(looks[0].id);
+  const [activeLook, setActiveLook] = useState(looks[0]!.id);
   const current = looks.find((l) => l.id === activeLook)!;
 
   return (
