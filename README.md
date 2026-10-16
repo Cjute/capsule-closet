@@ -6,7 +6,7 @@ RÊCHE is a wardrobe styling app that helps you get more out of the clothes you 
 
 | | | |
 |:-:|:-:|:-:|
-| <img src="shots/1.png" width="260"> | <img src="shots/2.png" width="260"> | <img src="shots/3.png" width="260"> |
+| <img src="1.png" width="260"> | <img src="2.png" width="260"> | <img src="3.png" width="260"> |
 
 ## What it does
 
